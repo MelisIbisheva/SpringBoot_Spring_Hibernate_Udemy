@@ -196,7 +196,7 @@ public class AppDAOImpl implements AppDAO{
         if(tempStudent!=null) {
             List<Course> courses = tempStudent.getCourses();
 
-            //beak association of all courses
+            //break association of all courses
             for (Course tempCourse : courses){
                 tempCourse.getStudents().remove(tempStudent);
             }
